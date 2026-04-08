@@ -32,8 +32,7 @@ url: "https://jpw.info" # the base hostname & protocol for your site, e.g. http:
 collections:
   food:
     order:
-      - springrolls.md
-      - padthai.md
+      - padseeeew.md
 
 # Build settings
 # theme: minima
