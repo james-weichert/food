@@ -1,0 +1,83 @@
+{% assign cuisines = site.food | group_by: "cuisine" | sort: "ordering" %}
+
+<div class="entry-elements">
+
+{% for cuisine in cuisines %}
+{% assign cuisinemod = forloop.index | modulo: 2 %}
+
+<div class="blog-entry" id="{{ cuisine.name | downcase }}">
+    
+    {% if cuisinemod == 0 %}
+
+        <div class="subhead">
+
+            <h2>{{ cuisine.name }}</h2>
+            <div class="hr"></div>
+
+        </div>
+
+    {% else %}
+
+        <div class="reverse-subhead">
+
+            <div class="hr"></div>
+            <h2>{{ cuisine.name }}</h2>
+
+        </div>
+
+    {% endif %}
+        
+
+    {% for food in cuisine.items %}
+    {% assign foodmod = forloop.index | modulo: 2 %}
+
+    <div class="entry-elements">
+
+        {% if foodmod == 1 %}
+
+            <div class="food-circle">
+                {% if food.rotate %}
+                    <img class="{% if food.plate %} plate-circle {% endif %} rotate-{{ food.rotate }}" {% if food.css %} style="{{ food.css }}" {% endif %} src="{{ food.img }}"/>
+                {% else %}
+                    <img class="{% if food.plate %} plate-circle {% endif %}" {% if food.css %} style="{{ food.css }}" {% endif %} src="{{ food.img }}"/>
+                {% endif %}
+            </div>
+
+            <div class="entry-description">
+                <span class="entry-head"><span class="highlight">{{ food.type }}</span><span class="entry-title">{{ food.name }}</span></span>
+                <p>
+                    {{ food.content }}
+                </p>
+            </div>
+
+        {% else %}
+
+            <div class="entry-description right-align">
+                <span class="entry-head"><span class="highlight">{{ food.type }}</span><span class="entry-title">{{ food.name }}</span></span>
+                <p>
+                    {{ food.content }}
+                </p>
+            </div>
+
+            <div class="food-circle">
+                {% if food.rotate %}
+                    <img class="{% if food.plate %} plate-circle {% endif %} rotate-{{ food.rotate }}" {% if food.css %} style="{{ food.css }}" {% endif %} src="{{ food.img }}"/>
+                {% else %}
+                    <img class="{% if food.plate %} plate-circle {% endif %}" {% if food.css %} style="{{ food.css }}" {% endif %} src="{{ food.img }}"/>
+                {% endif %}
+            </div>
+
+        {% endif %}
+
+        
+
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endfor %}
+
+</div>

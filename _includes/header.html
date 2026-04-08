@@ -1,0 +1,16 @@
+<header>
+    <h1>&#127790; James' Food Corner &#127836;</h1>
+
+    <div id="nav" class="flex">
+
+        {% assign cuisines = site.food | group_by: "cuisine" | sort: "ordering" %}
+        {% for cuisine in cuisines %}
+
+            <a onclick="smoothScroll('{{ cuisine.name | downcase }}')"><div class="nav-link {{ cuisine.name | downcase }}">{{ cuisine.name }}</div></a>
+
+        {% endfor %}
+        
+    </div>
+            
+
+</header>

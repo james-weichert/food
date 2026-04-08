@@ -1,0 +1,8 @@
+---
+name: Katsu
+cuisine: Japanese
+img: ./assets/images/food/avif/katsu.avif
+type: Recipe
+plate: true
+---
+It's always a good week when Japanese-style katsu is on the menu. I prefer to use chicken thighs over pork cutlets (tonkatsu) to achieve a good balance between crispy exterior and perfectly-cooked meat. **Dredge the thinned-out chicken thighs with flour, egg, and panko breading before shallow frying**. But the crispy katsu isn't complete without white rice and a heavy drizzle of **specialty katsu sauce (e.g. [Bulldog brand](https://www.amazon.com/Bull-Dog-Bull-Dog-Tonkatsu-Sauce/dp/B0002IZD1G?th=1))**.
