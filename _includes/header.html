@@ -3,8 +3,8 @@
 
     <div id="nav" class="flex">
 
-        {% assign cuisines = site.food | group_by: "cuisine" | sort: "ordering" %}
-        {% for cuisine in cuisines %}
+       
+        {% for cuisine in site.data.cuisines limit:4 %}
 
             <a onclick="smoothScroll('{{ cuisine.name | downcase }}')"><div class="nav-link {{ cuisine.name | downcase }}">{{ cuisine.name }}</div></a>
 

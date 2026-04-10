@@ -33,6 +33,8 @@ collections:
   food:
     order:
       - padseeeew.md
+      - thitkho.md
+
 
 # Build settings
 # theme: minima

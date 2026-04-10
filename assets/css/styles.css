@@ -771,7 +771,7 @@ details[open] summary::after {
 }
 
 /* BLUE */
-#thai, #japanese {
+#thai, #japanese, #french {
 	.subhead, .reverse-subhead, .tip {
 		color: var(--blue);
 	}
@@ -788,7 +788,7 @@ details[open] summary::after {
 		color: var(--blue);
 	}
 }
-.thai, .japanese {
+.thai, .japanese, .french {
 	color: var(--blue);
 }
 

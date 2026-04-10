@@ -1,5 +1,5 @@
 ---
-name: Spring rolls
+name: Spring Rolls
 cuisine: Vietnamese
 img: ./assets/images/food/avif/springrolls.avif
 type: Recipe
