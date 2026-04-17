@@ -2,23 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 
-/* 
-
-GREEN: #7DBA84
-rgba(125, 186, 132, 0.25);
-
-RED: #DB5E4B
-rgba(219, 94, 75, 0.25);
-
-BLUE: #5A80AF
-rgba(90, 128, 175, 0.25);
-
-ORANGE: #F49F67
-rgba(244, 159, 103, 0.25);
-
- */
-
-
 :root {
     --green: #7DBA84;
 	--lighter-green: #A1CEA7;
@@ -35,11 +18,14 @@ rgba(244, 159, 103, 0.25);
     --orange: #F49F67;
 	--lighter-orange: #F7B78D;
 	--orange-background: rgba(244, 159, 103, 0.25);
+
+	--grey-text: #314349;
+	--light-grey-text: #A0A7A7;
 }
 
 body {
 	font-family: 'Mukta', sans-serif;
-	color: #314349;
+	color: var(--grey-text);
  	margin: 0px;
 }
 
@@ -57,7 +43,7 @@ h2 {
 }
 
 h3 {
-	color: #A0A7A7;
+	color: var(--light-grey-text);
 	font-weight: 600;
 }
 
