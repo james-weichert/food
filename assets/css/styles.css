@@ -182,8 +182,23 @@ main {
 	}
 
 	main {
-		width: 80vw;
-		margin-left: -40vw;
+		width: 80vw !important;
+		margin-left: -40vw !important;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+	h2 {
+		font-size: 1.25em;
+	}
+
+	.food-circle {
+		margin-top: 1em;
+	}
+	.entry-title {
+		font-size: 1.25em !important;
 	}
 
 	.entry-description {
@@ -762,7 +777,7 @@ details[open] summary::after {
 }
 
 /* BLUE */
-#thai, #japanese, #french {
+#thai, #japanese, #french, #argentinian {
 	.subhead, .reverse-subhead, .tip {
 		color: var(--blue);
 	}
@@ -779,7 +794,7 @@ details[open] summary::after {
 		color: var(--blue);
 	}
 }
-.thai, .japanese, .french {
+.thai, .japanese, .french, .argentinian {
 	color: var(--blue);
 }
 
@@ -806,7 +821,7 @@ details[open] summary::after {
 }
 
 /* ORANGE */
-#filipino {
+#filipino, #german {
 	.subhead, .reverse-subhead, .tip {
 		color: var(--orange);
 	}
@@ -823,6 +838,6 @@ details[open] summary::after {
 		color: var(--orange);
 	}
 }
-.filipino {
+.filipino, .german {
 	color: var(--orange);
 }
